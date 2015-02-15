@@ -55,4 +55,3 @@ docs/_build/
 target/
 *.pyc
 *.sqlite3
-polls/migrations/
