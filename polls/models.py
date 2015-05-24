@@ -19,9 +19,7 @@ class Member(models.Model):
     name   = models.CharField(max_length=200)
     emp_id = models.CharField(max_length=10) #N22270
     email  = models.EmailField()
-    ip = models.GenericIPAddressField(protocol='IPV4')
 
 class Vote(models.Model):
     question = models.ForeignKey(Choice)
     member_id = models.ForeignKey(Member)
-    
